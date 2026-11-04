@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site no GitHub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo das Pelúcias</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Olá, Mundo! Meu site está no GitHub Pages!</h1>
-    <p>Este é o meu portfólio ou página pessoal.</p>
+
+  <header>
+    <h1>🧸 Mundo das Pelúcias</h1>
+    <div id="carrinho-status">
+      🛒 Carrinho: <span id="qtd-carrinho">0</span> itens
+    </div>
+  </header>
+
+  <main>
+    <h2>Nossos Ursos & Amigos</h2>
+    
+    <div class="vitrine">
+      <!-- Produto 1 -->
+      <div class="card-produto">
+        <img src="https://via.placeholder.com/200" alt="Urso de Pelúcia Clássico">
+        <h3>Urso Fofinho Clássico</h3>
+        <p class="preco">R$ 49,90</p>
+        <button onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="card-produto">
+        <img src="https://via.placeholder.com/200" alt="Pelúcia de Panda">
+        <h3>Panda Gigante</h3>
+        <p class="preco">R$ 79,90</p>
+        <button onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
